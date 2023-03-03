@@ -1,0 +1,65 @@
+/* universal css */
+*{
+    /* ukuran box dari webnya */
+    box-sizing: border-box;
+}
+
+body{
+    /* pembatas antara boxnya atau boreder boxnya */
+    margin: 0;
+}
+.header{
+    background-color:   #c1a48b;
+    padding: 20px;
+    text-align: center;
+}
+.topnav{
+    /* overflow buat hilangin garis */
+    overflow: hidden;
+    background-color: #efdfd2;
+}
+.topnav a{
+    /* float buat atur letak */
+    float:right;
+    display: block;
+    color: chocolate;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.topnav a:hover{
+    background-color: chocolate;
+    color:bisque;
+}
+.kolom1{
+    float: left;
+    padding: 10px;
+}
+.kolom1.side{
+    width: 25%;
+    /* punya putra tadi widthnya 50 */
+}
+.kolom1.middle{
+    width: 50%;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+/* digunakan untuk membatasi dengan div lainnya */
+.row::after{
+    content: "";
+    display: table;
+    /* membersihkan float left sebelumnya */
+    clear: both; 
+}
+.footer{
+    background-color: #efdfd2;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
