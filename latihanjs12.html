@@ -1,0 +1,42 @@
+<script>
+    // array of object
+    // atau array didalam array
+    // atau array yang menyimpan array
+
+    let p1 = {nama:"Putri", nilai:80}
+    let p2 = {nama:"Maulida", nilai:81}
+    let p3 = {nama:"Puma", nilai:50}
+    let p4 = {nama:"Uti", nilai:83}
+    let p5 = {nama:"Keirs", nilai:84}
+
+    let person = [p1, p2, p3, p4, p5];
+</script>
+<h3>
+    <table style = "padding: 10; text-align: center; width: 100%">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Nama</td>
+                <td>Nilai</td>
+                <td>Keterangan</td>
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                // deklarasi variable
+                var no = 1;
+                // of digunakan untuk menyingkat nama variable. ex: p of person
+                // of berlaku pada pemrogramam JS
+                for(p of person) {
+                   let ket = (p.nilai >= 60 ? "Lulus" : "Gagal")
+                    document.write(`<tr bgcolor = "">
+                    <td>${no++}</td>
+                    <td>${p.nama}</td>
+                    <td>${p.nilai}</td> 
+                    <td>${ket}</td>
+                    </tr>`);
+                }
+            </script>
+        </tbody>
+    </table>
+</h3>

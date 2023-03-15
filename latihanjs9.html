@@ -1,0 +1,71 @@
+<script>
+    // jika tidak menggunakan looping
+    document.write('Cetak bilangan secara manual');
+    document.write('<br>Bilangan 1' + '<br> Bilangan 2' + '<br> Bilangan 3');
+
+    // Contoh perulangan menggunakan for menggunakan operator increment
+    document.write('<hr> Cetak bilangan 1 sampai 50');
+    var angka;
+    for(angka = 1; angka <= 50; angka++) {
+        document.write('<br> Bilangan ' + angka);
+        }
+
+    // contoh perulangan menggunakan decreement
+    document.write('<hr> Cetak bilangan 50 sampai 1');
+    var bil;
+    for(bil = 50; bil >= 1; bil--) {
+        document.write('<br> Bilangan ' + bil);
+    }
+
+    // mencetak bilangan ganjil
+    // menggunakan modulus (sisa bagi)
+    document.write('<hr> Mencetak Bilangan Ganjil');
+    let ganjil;
+    for(ganjil = 1; ganjil <=20; ganjil++){
+        if(ganjil % 2 == 1){
+            document.write('<br> bilangan ganjil : ' + ganjil);
+        }
+    }
+
+    // ganjil 
+    let ganjil1;
+    for (ganjil1 = 1; ganjil1 <= 20; ganjil1 += 2){
+        document.write('<hr><br> bilangan ganjil : ' + ganjil1);
+    }
+
+    // mencetak bilangan genap
+    // menggunakan modulus (sisa bagi)
+    document.write('<hr> Mencetak Bilangan Genap');
+    let genap;
+    for(genap = 1; genap <=20; genap++){
+        if(genap % 2 == 0){
+            document.write('<br> bilangan genap : ' + genap);
+        }
+    }
+
+    // perulangan menggunakan while
+    document.write("<hr>------- Cetak angka 1 sampai 30 -------");
+    let angka2 = 1;
+    // angka 1 ini nantinya akan di increment
+    while(angka2 <= 30){
+        document.write('<br> Cetak bilangan ' + angka2);
+        angka2++;
+    }
+
+    // membuat bilangan prima
+    document.write("<hr> Membuat bilangan prima");
+    var i;
+    var y;
+
+    for(i = 1; i <= 30; i++) {
+        var prim = 0;
+        for(y = 1; y <= i; y++) {
+            if(i % y == 0) {
+                prim++;
+            }
+        }
+        if(prim == 2){
+            document.write('<br> Bilangan Prima ' + i);
+        }
+    }
+</script>
